@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victo.questionnaire.Page6">
+
+    <ImageView
+        android:id="@+id/idRATP"
+        android:layout_width="196dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toStartOf="@+id/idSNCF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoratp" />
+
+    <ImageView
+        android:id="@+id/idSNCF"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosncf" />
+
+    <Button
+        android:id="@+id/idRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <ListView
+        android:id="@+id/idListe"
+        android:layout_width="395dp"
+        android:layout_height="470dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+
+</android.support.constraint.ConstraintLayout>

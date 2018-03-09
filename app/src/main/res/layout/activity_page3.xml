@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victo.questionnaire.Page3">
+
+    <ImageView
+        android:id="@+id/idRATP"
+        android:layout_width="196dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toStartOf="@+id/idSNCF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoratp" />
+
+    <ImageView
+        android:id="@+id/idSNCF"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosncf" />
+
+    <TextView
+        android:id="@+id/txtProprete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="139dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="4dp"
+        android:text="Propreté :"
+        app:layout_constraintBottom_toTopOf="@+id/txtServices"
+        app:layout_constraintEnd_toStartOf="@+id/idProprete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idProprete" />
+
+    <RadioGroup
+        android:id="@+id/idProprete"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/idService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRATP">
+
+        <RadioButton
+            android:id="@+id/idP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Non satisfait" />
+
+        <RadioButton
+            android:id="@+id/idP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Plutôt satisfait" />
+
+        <RadioButton
+            android:id="@+id/idP3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/idService"
+        android:layout_width="180dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/idPonctuel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProprete">
+
+        <RadioButton
+            android:id="@+id/idS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Non satisfait" />
+
+        <RadioButton
+            android:id="@+id/idS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Plutôt satisfait" />
+
+        <RadioButton
+            android:id="@+id/idS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/idPonctuel"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/idSuivant"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/idPon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Non satisfait" />
+
+        <RadioButton
+            android:id="@+id/idPonc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Plutôt satisfait" />
+
+        <RadioButton
+            android:id="@+id/idPonc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Satisfait" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="39dp"
+        android:text="Service :"
+        app:layout_constraintBottom_toTopOf="@+id/txtPonctuel"
+        app:layout_constraintEnd_toStartOf="@+id/idService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idService" />
+
+    <TextView
+        android:id="@+id/txtPonctuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginStart="39dp"
+        android:text="Ponctuel :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idPonctuel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idPonctuel" />
+
+    <Button
+        android:id="@+id/idSuivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="161dp" />
+
+</android.support.constraint.ConstraintLayout>

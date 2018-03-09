@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victo.questionnaire.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/idRATP"
+        android:layout_width="196dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toStartOf="@+id/idSNCF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoratp" />
+
+    <ImageView
+        android:id="@+id/idSNCF"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBienvenue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosncf" />
+
+    <TextView
+        android:id="@+id/textBienvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="64dp"
+        android:text="Bienvenue dans notre application de sondage."
+        app:layout_constraintBottom_toTopOf="@+id/idRERA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/idRERA"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/idRERB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logorera" />
+
+    <ImageView
+        android:id="@+id/idRERB"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/idRERC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logorerb" />
+
+    <ImageView
+        android:id="@+id/idRERC"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logorerc" />
+
+</android.support.constraint.ConstraintLayout>
